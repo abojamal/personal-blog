@@ -1,7 +1,7 @@
 .blogpost-container {
   display: grid;
   grid-template-columns: 4fr 1fr;
-  /* grid-template-rows: 1fr; */
+  grid-template-rows: 2fr 4fr 1fr;
   grid-template-areas:
     'header header'
     'main sidebar'
@@ -59,4 +59,10 @@
 
 .info {
   margin-top: 10px;
+}
+
+@media (max-width: 818px) {
+  .blogpost-container {
+    height: calc(100vh - calc(100vh - 100%));
+  }
 }
