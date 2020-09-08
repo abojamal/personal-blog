@@ -1,0 +1,62 @@
+.blogpost-container {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  /* grid-template-rows: 1fr; */
+  grid-template-areas:
+    'header header'
+    'main sidebar'
+    'postfooter postfooter';
+  height: 100vh;
+}
+
+.header {
+  grid-area: header;
+  background-color: #b9ceeb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.frame {
+  text-align: center;
+  padding: 20px 5px;
+}
+
+.main {
+  grid-area: main;
+  background-color: #deecfc;
+  text-align: center;
+}
+.sidebar {
+  grid-area: sidebar;
+  background-color: #c3b4d2;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.postfooter {
+  grid-area: postfooter;
+  background-color: #87a8d0;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar {
+  height: 70px;
+  width: 70px;
+  display: block;
+  margin: 10px auto;
+}
+
+.maldives {
+  margin: 5px 0;
+}
+
+.info {
+  margin-top: 10px;
+}

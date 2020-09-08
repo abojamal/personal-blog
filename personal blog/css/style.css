@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+em {
+  color: red;
+}
+
+/* strong {
+  font-weight: 700;
+} */
+
+.quotes {
+  color: green;
+}
+
+li {
+  list-style-type: none;
+}
