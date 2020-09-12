@@ -4,13 +4,9 @@ a {
   padding-top: 4px;
 }
 
-img {
-  /* max-width: 100%; */
-}
 .container {
   display: grid;
   height: 100vh;
-  /* grid-template-columns: 1fr; */
   grid-template-rows: 30px 4fr 1fr;
   grid-template-areas:
     'nav'
@@ -46,6 +42,7 @@ img {
 /* nested grid for content posts */
 .cardone {
   grid-area: one;
+  text-align: center;
 }
 .cardtwo {
   grid-area: two;
@@ -64,4 +61,30 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media (max-width: 1037px) {
+  .container {
+    display: grid;
+    height: 100vh;
+    width: 100vh;
+    grid-template-rows: 30px 4fr 1fr;
+    grid-template-areas:
+      'nav'
+      'content'
+      'footer';
+  }
+  .content {
+    display: grid;
+    grid-area: content;
+    grid-gap: 20px;
+    grid-template-areas:
+      'one'
+      'two'
+      'three'
+      'four';
+    background-color: #deecfc;
+    color: #87a8d0;
+    font-weight: 500;
+  }
 }
